@@ -4,3 +4,5 @@ This repository demonstrates a learning approach to the stabilization of a pendu
 # Requirements
 - [x] MATLAB 2019a
 
+# Demonstration 
+test.m runs the Q-learning algorithm for the stabilization of a pendulum in the upright position.
