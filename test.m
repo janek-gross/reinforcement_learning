@@ -73,30 +73,6 @@ for n_e=1:n_evaluation_runs
     end
 end
 
-% %Plot Reward sum per training episode
-% figure()
-% plot(1:length(r_sum_vector), mean(r_sum_vector))
-% hold on
-% plot(1:length(r_sum_vector), mean(r_sum_vector)+std(r_sum_vector))
-% plot(1:length(r_sum_vector), mean(r_sum_vector)-std(r_sum_vector))
-% %title(function_approximator + "function approximator")
-% xlabel("Average reward and standard deviation")
-% hold off
-% 
-% %Plot Reward sum per training episode
-% figure()
-% plot(1:length(r_sum_vector), mean(n_parts))
-% %title(function_approximator + "function approximator")
-% xlabel("Averagy number of parts per episode")
-
-
-
-
-% Somehow calling figure(5) only one time will result in the last figure being
-% overwritten.
-%figure(5)
-%figure(5)
-
 %Run learned policy
 learning = false;
 draw_pend = true;
@@ -104,6 +80,7 @@ n_steps = 500;
 Q_learning(learning, draw_pend, Q_train, init_s, dt, mu, m, g, l, epsilon, gamma, n_steps, thr_n_i, thr_S_squared,a_q,b_q,a_var,b_var)
 
 
+%Run saved policy
 learning = false;
 draw_pend = true;
 n_steps = 500;
