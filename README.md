@@ -7,4 +7,5 @@ This repository demonstrates a learning approach to the stabilization of a pendu
 # Demonstration 
 test.m runs the Q-learning algorithm for the stabilization of a pendulum in the upright position.
 The resulting policy is shown below.
+Note that the maximum actuation is set such that the pendulum cannot get into upright position in one swing.
 <img src="https://github.com/janek-gross/reinforcement_learning/blob/master/pendulum.gif?raw=true" />
