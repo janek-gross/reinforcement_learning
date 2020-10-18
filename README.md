@@ -6,8 +6,8 @@ In this example the Q function is learned. The Q function is the function of sta
 - [x] MATLAB 2019a
 
 # Implementation Details
-Binary space partition is used to divide the state-action space into smaller areas is the Q-function variance is too high. This efficient datastructure allows to represent the Q-function on the state-action space with variable resolution.
-In each area of the binary space tree a Q-function is learned via gradient descent. The Q-function is approximated by a linear combination of sine and cosine functions. These sine and cosine functions form an (orthogonal) function basis. 
+Binary space partition is used to divide the state-action space into smaller areas. This efficient data-structure allows to represent the Q-function on the state-action space with variable resolution. Areas are divided if the variance of the learned Q-function is too high during the training. 
+In each area of the binary space tree a Q-function is learned via gradient descent. The Q-function is approximated by a linear combination of sine and cosine functions. These sine and cosine functions form an (orthogonal) function basis.
 
 # Demonstration 
 test.m runs the Q-learning algorithm for the stabilization of a pendulum in the upright position.
